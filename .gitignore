@@ -1,0 +1,33 @@
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+UserSettings/
+
+# Auto-generated VS/JetBrains Rider files
+.vs/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.pidb
+*.user
+*.booproj
+*.svd
+*.pdb
+
+# Crash logs
+sysinfo.txt
+
+# Exclude OS-specific files
+.DS_Store
+Thumbs.db
+
+# Unity-generated
+*.unitypackage
+
+# Addressable Assets
+Assets/AddressableAssetsData/*/*.bin*
