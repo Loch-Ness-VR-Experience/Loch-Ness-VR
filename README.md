@@ -56,4 +56,9 @@
 
 ## 👥 Team Members
 
-- FULL NAMES BELOW AND GITHUB HANDLES
+- Denver Cavan @DenverCav
+- Rory Baird @RoryBaird
+- Lana Morrison @lanamorrison4
+- Theo McKenzie @Theoodoore
+- Fabian Skyner @Fabian-Skyner
+- Michal Mucha
