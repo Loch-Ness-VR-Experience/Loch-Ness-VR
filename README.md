@@ -47,7 +47,7 @@
 
 ## 📦 Assets and Attribution
 
-- Underwater terrain generated from bathymetric data courtesy of the Loch Ness Centre, and retopologised for game-ready assets
+- Underwater terrain made as a placeholder with the Unity terrain editor
 - Custom 3D models
 - Original sounds
 - Model textures sourced from (INSERT ANY SOURCES HERE)
