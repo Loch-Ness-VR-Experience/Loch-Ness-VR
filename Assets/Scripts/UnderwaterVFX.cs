@@ -4,7 +4,7 @@ public class UnderwaterEffectsController : MonoBehaviour
 {
     public Light directionalLight;  // Reference to directional light (sunlight)
     public Color underwaterLightColor = new Color(0.2f, 0.5f, 0.8f); // Light color underwater
-    public float underwaterLightIntensity = 0.4f;  // Light intensity underwater
+    public float underwaterLightIntensity = 0.2f;  // Light intensity underwater
     private Color originalLightColor;
     private float originalLightIntensity;
 
@@ -95,7 +95,7 @@ public class UnderwaterEffectsController : MonoBehaviour
         {
             RenderSettings.fog = true;  // Enable fog
             RenderSettings.fogColor = new Color(0.29f, 0.35f, 0.33f); // Underwater fog color
-            RenderSettings.fogDensity = 0.0007f;  // Adjust this value for fog density (you can make it thicker or thinner)
+            RenderSettings.fogDensity = 0.001f;  // Adjust this value for fog density (you can make it thicker or thinner)
             Debug.Log("Fog Enabled!");
 
             // Play underwater ambience
