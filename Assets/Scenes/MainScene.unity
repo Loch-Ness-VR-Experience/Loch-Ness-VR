@@ -340,7 +340,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -677,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -2352,7 +2352,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -3354,6 +3354,7 @@ MonoBehaviour:
   underwaterAmbience: {fileID: 466830198}
   windAmbience: {fileID: 2019678568}
   leavingWaterSound: {fileID: 1990658248}
+  birdSong: {fileID: 1509408805}
 --- !u!82 &480467718
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7954,6 +7955,134 @@ Terrain:
   m_EnableHeightmapRayTracing: 1
   m_EnableTreesAndDetailsRayTracing: 0
   m_TreeMotionVectorModeOverride: 3
+--- !u!1 &1509408804
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1509408806}
+  - component: {fileID: 1509408805}
+  m_Layer: 0
+  m_Name: BirdSong
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1509408805
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509408804}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 33c1465a6c1bb1048ab5bb77ea021a34, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1509408806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1509408804}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -904.275, y: -479.92377, z: 1556.8285}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1531145097 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1655834732185293059, guid: ce6ea00a2294d5541bc3e05dd208942c, type: 3}
@@ -8884,7 +9013,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.02
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -8948,7 +9077,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.01
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -10109,7 +10238,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4688814510885580559, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Speed
-      value: 0.02
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5359682491375002055, guid: b39b1f52dfae7f34f9284ca83d67b2a4, type: 3}
       propertyPath: m_Name
@@ -10291,7 +10420,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 97
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -11811,3 +11940,4 @@ SceneRoots:
   - {fileID: 2071085141}
   - {fileID: 428726103}
   - {fileID: 432002132}
+  - {fileID: 1509408806}

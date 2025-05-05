@@ -2,19 +2,20 @@ using UnityEngine;
 
 public class UnderwaterEffectsController : MonoBehaviour
 {
-    public Light directionalLight;  // Reference to directional
-    public Color underwaterLightColor = new Color(0.2f, 0.5f, 0.8f); // Light color underwater
-    public float underwaterLightIntensity = 0.2f;  // Light intensity underwater
+    public Light directionalLight;
+    public Color underwaterLightColor = new Color(0.2f, 0.5f, 0.8f);
+    public float underwaterLightIntensity = 0.2f;
     private Color originalLightColor;
     private float originalLightIntensity;
 
-    public GameObject playerCamera; // This will be the "Main Camera" in your VR Rig
+    public GameObject playerCamera;
 
     // AudioSource references for sounds
-    public AudioSource splashSound; // Splash sound effect (for entering underwater)
+    public AudioSource splashSound;
     public AudioSource underwaterAmbience; // Underwater ambient sound (looped)
-    public AudioSource windAmbience; // Wind sound for flying over the loch
-    public AudioSource leavingWaterSound; // Sound for leaving the underwater zone
+    public AudioSource windAmbience;
+    public AudioSource leavingWaterSound;
+    public AudioSource birdSong;
 
     void Start()
     {
@@ -29,7 +30,9 @@ public class UnderwaterEffectsController : MonoBehaviour
         if (windAmbience != null && !windAmbience.isPlaying)
         {
             windAmbience.Play();  // Start playing the wind sound from the beginning
+            birdSong.Play();
             windAmbience.loop = true;  // Ensure it loops
+            birdSong.loop = true;
             Debug.Log("Wind ambience started.");
         }
     }
@@ -51,6 +54,7 @@ public class UnderwaterEffectsController : MonoBehaviour
             if (windAmbience != null && windAmbience.isPlaying)
             {
                 windAmbience.Pause();  // Pause wind sound when underwater
+                birdSong.Pause();
                 Debug.Log("Wind ambience paused.");
             }
         }
@@ -77,6 +81,7 @@ public class UnderwaterEffectsController : MonoBehaviour
             if (windAmbience != null && !windAmbience.isPlaying)
             {
                 windAmbience.Play();  // Resume the wind sound when leaving underwater
+                birdSong.Play();
                 Debug.Log("Wind ambience resumed.");
             }
         }
