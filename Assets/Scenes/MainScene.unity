@@ -2129,7 +2129,7 @@ Transform:
   m_GameObject: {fileID: 302445421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1088, y: -1039, z: 1415.0021}
+  m_LocalPosition: {x: -1088, y: -956, z: 1415.0021}
   m_LocalScale: {x: 9818.291, y: 1, z: 15918.205}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5438,6 +5438,7 @@ GameObject:
   - component: {fileID: 963194231}
   - component: {fileID: 963194232}
   - component: {fileID: 963194233}
+  - component: {fileID: 963194234}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -5632,6 +5633,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!45 &963194234
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: efd1c33efd2d58340b88804268e6833f, type: 2}
 --- !u!1 &973937814
 GameObject:
   m_ObjectHideFlags: 0
