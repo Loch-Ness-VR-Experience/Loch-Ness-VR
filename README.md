@@ -13,7 +13,7 @@
 ## 📁 Project Structure
 
 - Project root
-  - Assets/ -> All Unity scenes, 3D models, scripts, and sounds
+  - Assets/ -> All Unity scenes, 3D models, scripts, sounds, etc.
     - Scenes/ -> Unity scenes
     - Scripts/ -> Scripts in C#
     - Models/ -> 3D assets
@@ -61,4 +61,4 @@
 - Lana Morrison @lanamorrison4
 - Theo McKenzie @Theoodoore
 - Fabian Skyner @Fabian-Skyner
-- Michal Mucha
+- Michal Mucha @Michal-Mucha1
